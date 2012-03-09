@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, welcome to SNotG!</string>
+    <string name="app_name">SNotG!</string>
+    <string name="username">username</string>
+    <!-- Michaels? API Key <string name="map_key">0z2Vz2q4WuDjNmM-rACmYxa1DGISMVyQ1Daqzzw</string> -->
+    <!-- Garry's Map API Key<string name="map_key">0UZbSpvZ24TWc1ZhrHVoLSbqJgFjbFEWQRj_Quw</string> -->
+    <!-- Ray's Desktop's Map Api key <string name="map_key">0w8L4-yLsUND38g690Fl0DcGS3g2O59-5IUhPhg</string> --> 
+   <!-- Ray's laptop map api key. --><string name="map_key">0w8L4-yLsUNCLeisCOdcwbLQsj1xiFKdRxG9sRg</string>
+    <!-- Release Map api key  linked to snotg-release.keystore on my <string name="map_key">0w8L4-yLsUNBJ9ZjjEe0_nQYLCIS6jy4CgReH1w</string> -->
+
+    <!-- EXTERNALIZE Google App Engine url http://snotgdepaul1.appspot.com/user" se491snotg-1.appspot.com -->
+    <string name="uri_backend_hostname">se491snotg.appspot.com</string>
+    <string name="uri_backend_port">80</string>
+     
+    <!-- Garry's Map Strings -->
+    <string name="locLabel">Location:</string>
+    <string name="goLabel">Go</string>
+    <string name="latLabel">Lat</string>
+    <string name="longLabel">Long</string>
+    <string name="trackLabel">Track Present Location</string>
+    <string name="satLabel">Sat</string>
+    <string name="mapLabel">Map</string>
+    <string name="nearbyUsers">Nearby Users</string>
+    <string name="profile">Profile</string>
+    <string name="map">Map</string>
+    <string name="list">List</string>
+    <string name="settings">Settings</string>
+    <string name="centerMe">Center Me</string>
+
+    <!-- Profile strings -->
+    <string name="profile_nameHint">Enter profile name</string>
+    <string name="profile_descriptionHint">Enter profile description</string>
+    <string name="profile_shoutHint">Enter shout</string>
+    <string name="profile_other_id_field_label">Profile for user -  </string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:id="@+id/profile_otherUserIdRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_otherAvatarImage"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/profile_otherUseridLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight=".33" />
+            android:text="@string/profile_other_id_field_label"  
+            
+
+        <TextView
+            android:id="@+id/profile_otherUserid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight=".33" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="78dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sean_connery" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/profile_otherUseridLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Information:"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/profile_otherUserid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_otherShoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_weight="0.86"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:text="Shout:"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/otherProfileShout"
+            android:layout_width="match_parent"
+            android:layout_height="69dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:text="Description:"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/profile_otherDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		
+        <!--  Unused at the moment
+        <Button
+            android:id="@+id/profile_otherProfileMap"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map User"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/generic_button_2" />
+         -->
+
+        <Button
+            android:id="@+id/profile_otherChatButton"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/generic_button"
+             />
+    </LinearLayout>
+
+</LinearLayout>

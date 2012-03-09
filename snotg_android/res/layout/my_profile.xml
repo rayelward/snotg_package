@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+	
+	<LinearLayout
+	    android:id="@+id/profile_containerLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="5dp"
+	    android:weightSum="1.0" >
+
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+			
+		    
+			<ImageView
+			    android:id="@+id/profile_avatarImage"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:adjustViewBounds="true"
+			    android:enabled="false"
+			    android:maxHeight="100dp"
+			    android:maxWidth="100dp"
+			    android:src="@drawable/user_blank" />
+
+
+			<LinearLayout
+			    android:id="@+id/linearLayout2"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:minWidth="70dp"
+				    android:text="Shout:" />
+
+
+
+				<EditText
+				    android:id="@+id/profile_shoutText"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:enabled="false"
+				    android:paddingLeft="5dp"
+				    android:inputType="textMultiLine" 
+		        	android:maxLength="40" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+	        
+
+
+
+
+	    <LinearLayout
+	        android:id="@+id/profile_containerLayoutAllButImage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/profile_avatarImage"
+	        android:orientation="vertical" >
+
+	        <!--
+		    <LinearLayout android:id="@+id/profile_row1Buttons"
+		    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    	android:layout_below="@+id/profile_descText"
+		    	android:weightSum="1.0" >	    
+		    	<Button android:id="@+id/profile_submitButton"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content"
+			        android:layout_weight=".33"
+			        android:layout_alignParentLeft="true"
+			        android:enabled="false"
+			        android:text="Save" />	
+			    <Button android:id="@+id/profile_editButton"
+		    		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    		android:layout_weight=".34"
+		    		android:text="Edit" />	        
+			    <Button android:id="@+id/profile_cancelButton"
+			    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    	android:layout_weight=".33"
+			    	android:layout_alignParentRight="true"    		    	
+			    	android:enabled="false"
+			    	android:text="Cancel" />		    		        
+			</LinearLayout>
+
+	        -->
+
+	        <LinearLayout
+	            android:id="@+id/profile_row2Buttons"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/profile_editButton"
+	            android:weightSum="1.0" >
+
+	            <!--
+			    <Button android:id="@+id/profile_otherProfileButton"
+			    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    	android:layout_weight=".33"
+			    	android:text="Other" />
+	            -->
+	        </LinearLayout>
+
+	        <TextView
+	            android:id="@+id/profile_pingText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/profile_pingButton"
+	            android:text="" />
+	    </LinearLayout>
+
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="match_parent"
+	        android:layout_height="196dp"
+	        android:orientation="vertical" >
+			<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:minWidth="70dp"
+				    android:text="Profile Name:" />
+			
+	        <EditText
+	            android:id="@+id/profile_nameText"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:enabled="false"
+	            android:textSize="24sp" 
+	            android:inputType="text"
+		    	android:maxLength="20"/>
+	        
+	        <TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:minWidth="70dp"
+				    android:text="Description:" />
+	        
+	        <EditText
+	        android:id="@+id/profile_descText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.39"
+	        android:enabled="false"
+	        android:inputType="textMultiLine"
+		    android:maxLength="144" />
+	        
+
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <LinearLayout android:id="@+id/profile_row1Buttons"
+		    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    	android:layout_below="@+id/profile_descText"
+		    	android:weightSum="1.0" >	    
+		    	<Button android:id="@+id/profile_submitButton"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content"
+			        android:layout_weight=".33"
+			        android:layout_alignParentLeft="true"
+			        android:enabled="false"
+			        android:text="Save" 
+			        android:textColor="#FFFFFF"
+        			android:background="@drawable/generic_button_2"/>	
+			    <Button android:id="@+id/profile_editButton"
+		    		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    		android:layout_weight=".34"
+		    		android:text="Edit" 
+		    		android:textColor="#FFFFFF"
+        			android:background="@drawable/generic_button_2"/>	        
+			    <Button android:id="@+id/profile_cancelButton"
+			    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    	android:layout_weight=".33"
+			    	android:layout_alignParentRight="true"    		    	
+			    	android:enabled="false"
+			    	android:text="Cancel" 
+			    	android:textColor="#FFFFFF"
+        			android:background="@drawable/generic_button_2"/>		    		        
+			</LinearLayout>
+			
+	    </LinearLayout>
+
+	</LinearLayout>
+
+	
+</RelativeLayout>
